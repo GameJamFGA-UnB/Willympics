@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class buttonSmashing : MonoBehaviour
 {
     [SerializeField] private GameObject secondcanvasPanel;
+    private
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
