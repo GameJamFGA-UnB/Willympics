@@ -1618,8 +1618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timertext: {fileID: 1260501227}
-  remaining_time: 5
-  parajogo: 0
+  remaing_time: 10
 --- !u!114 &1871501639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1632,9 +1631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a17e5d15e69dc47b0944713ec137a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPanel: {fileID: 1655330707}
-  relogio: {fileID: 1260501227}
-  contagem: {fileID: 1174251786}
+  secondcanvasPanel: {fileID: 0}
 --- !u!1 &1988845785
 GameObject:
   m_ObjectHideFlags: 0
