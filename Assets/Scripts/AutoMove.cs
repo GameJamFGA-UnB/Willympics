@@ -45,7 +45,8 @@ public class AutoMove : MonoBehaviour
             }
             else
                 Debug.Log("Perdeu!");
-                valoresScript.var2++;
+                if(moveSpeed > 1)
+                    valoresScript.var2++;
                 SceneManager.LoadSceneAsync(2);
                 return;
         }
