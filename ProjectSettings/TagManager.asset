@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - objeto
+  - End
   layers:
   - Default
   - TransparentFX
@@ -12,7 +12,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
@@ -39,17 +39,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: camada -1
-    uniqueID: 3932826193
+  - name: Background
+    uniqueID: 3831895781
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: camada 1
-    uniqueID: 2700451409
+  - name: Foreground
+    uniqueID: 1197053287
     locked: 0
-  - name: camada 2
-    uniqueID: 2092364289
+  - name: player
+    uniqueID: 3414105919
     locked: 0
   m_RenderingLayers:
   - Default
