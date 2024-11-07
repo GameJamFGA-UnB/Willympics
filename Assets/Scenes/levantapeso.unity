@@ -1618,7 +1618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timertext: {fileID: 1260501227}
-  remaining_time: 30
+  remaining_time: 5
   parajogo: 0
 --- !u!114 &1871501639
 MonoBehaviour:

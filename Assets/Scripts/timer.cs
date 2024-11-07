@@ -5,9 +5,19 @@ public class timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timertext;
     [SerializeField] public float remaining_time;
+    private valores valoresScript;
     public bool parajogo = false;
+    private int a;
     // Update is called once per frame
-    void Update()
+
+    void Start()
+    {
+        // Encontra o script valores na cena
+        valoresScript = FindObjectOfType<valores>();
+        a = valoresScript.var1;
+        remaining_time += a;
+    }
+        void FixedUpdate()
     {
         if (timertext == null || !timertext.gameObject.activeInHierarchy)
         {
