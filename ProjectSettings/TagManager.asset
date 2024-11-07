@@ -39,8 +39,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: camada -1
+    uniqueID: 3932826193
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: camada 1
+    uniqueID: 2700451409
+    locked: 0
+  - name: camada 2
+    uniqueID: 2092364289
     locked: 0
   m_RenderingLayers:
   - Default

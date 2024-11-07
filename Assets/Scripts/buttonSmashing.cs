@@ -9,13 +9,13 @@ public class buttonSmashing : MonoBehaviour
     [SerializeField] private GameObject canvasPanel;
     [SerializeField] private TextMeshProUGUI relogio;
     [SerializeField] TextMeshProUGUI contagem;
-
-
+    private valores valoresScript;
+    private int i = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
-}
+        valoresScript = FindFirstObjectByType<valores>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -34,6 +34,8 @@ public class buttonSmashing : MonoBehaviour
                 }
             }
             if (relogio.text == "00:00") {
+                
+                if (i == 0) { valoresScript.var1 += 5; i++; }
                 SceneManager.LoadSceneAsync(2);
                 return; }
         }
