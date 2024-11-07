@@ -33,8 +33,8 @@ public class Ui : MonoBehaviour
         foreach (Ui_Button button in buttons) 
         {
             button.gameObject.SetActive(true); // Incializa o botao
-            float randX = Random.Range(100, 600);
-            float randY = Random.Range(300, 400);
+            float randX = Random.Range(200, 1700);
+            float randY = Random.Range(500, 800);
 
             button.transform.position = new Vector2(randX, randY); // Transporta para uma posicao aleatoria
         }
