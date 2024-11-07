@@ -22,7 +22,7 @@ public class Ui : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(Input.GetKeyDown(KeyCode.T)) // Apertar T faz o botoes surgirem - DEBUG
             OpenButtonUi(); 

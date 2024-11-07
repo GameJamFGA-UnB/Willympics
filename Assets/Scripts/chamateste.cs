@@ -15,12 +15,12 @@ public class chamateste : MonoBehaviour
     {
         if (player != null)
         {
-            // Obtém o componente PlayerController do jogador
+            // Obtï¿½m o componente PlayerController do jogador
             playerController = player.GetComponent<PlayerController>();
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         bool podeAndarStatus = playerController.podeandar;
         if (playerController != null && !runned && !podeAndarStatus)
@@ -36,7 +36,7 @@ public class chamateste : MonoBehaviour
     {
         
         canvasPanel.SetActive(!canvasPanel.activeSelf);
-        // Aguarda 3 segundos antes de permitir outra atualização
+        // Aguarda 3 segundos antes de permitir outra atualizaï¿½ï¿½o
         yield return new WaitForSeconds(3f);
         canvasPanel.SetActive(!canvasPanel.activeSelf);
         secondcanvasPanel.SetActive(!secondcanvasPanel.activeSelf);

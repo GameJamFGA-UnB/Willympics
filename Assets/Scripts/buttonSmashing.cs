@@ -17,19 +17,20 @@ public class buttonSmashing : MonoBehaviour
        
 }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (canvasPanel.activeSelf)
         {
             if (Input.GetKeyDown(KeyCode.Space) && relogio.text != "00:00")
             {
-                // Reduz o número exibido em contagem em 1
+                // Reduz o nï¿½mero exibido em contagem em 1
                 int currentCount = int.Parse(contagem.text);
                 currentCount = Mathf.Max(0, currentCount - 1); // Evita valores negativos
                 contagem.text = currentCount.ToString();
                 if (currentCount == 0)
                 {
-                    Debug.Log("opa");
+                    //Debug.Log("opa");
+                    SceneManager.LoadSceneAsync(3);
                     return;
                 }
             }

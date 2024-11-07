@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AutoMove : MonoBehaviour
 {
     public float moveSpeed; // Velocidade de movimentacao
     public float jumpingPower; // Pulo
+    private valores valoresScript;
+    private float DifficultyMod;
 
     [SerializeField] private Rigidbody2D rb;
 
@@ -15,12 +18,14 @@ public class AutoMove : MonoBehaviour
         {
             rb = GetComponent<Rigidbody2D>();
         }
-        moveSpeed = 4f;
+        valoresScript = FindObjectOfType<valores>();
+        DifficultyMod = valoresScript.var2;
+        moveSpeed = 15f - DifficultyMod;
         Debug.Log("Move Speed: " + moveSpeed);
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(moveSpeed, rb.linearVelocity.y); // Move 
     }
@@ -35,9 +40,14 @@ public class AutoMove : MonoBehaviour
                 moveSpeed = 2f;
                 rb.freezeRotation = true; // Tranca a rotacao do personagem
                 rb.linearVelocity = new Vector2(moveSpeed, jumpingPower);
+                SceneManager.LoadSceneAsync(0);
+                return;
             }
             else
                 Debug.Log("Perdeu!");
+                valoresScript.var2++;
+                SceneManager.LoadSceneAsync(2);
+                return;
         }
     }
 }
