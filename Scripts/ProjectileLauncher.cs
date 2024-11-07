@@ -18,16 +18,16 @@ public class ProjectileLauncher : MonoBehaviour
         var _projectile = Instantiate(projectile, pontoLancamento.transform.position, pontoLancamento.transform.rotation);
         Rigidbody rb = _projectile.GetComponent<Rigidbody>();
 
-        // Converte o ângulo de lançamento para radianos
+        // Converte o Ã¢ngulo de lanÃ§amento para radianos
         float radianAngle = launchAngle * Mathf.Deg2Rad;
 
-        // Calcula as componentes x e y da direção de lançamento
+        // Calcula as componentes x e y da direÃ§Ã£o de lanÃ§amento
         Vector2 launchDirection = new Vector2(
             Mathf.Cos(radianAngle) * launchPoint.forward.x,
             Mathf.Sin(radianAngle)
         );
 
-        // Aplica a força na direção calculada
+        // Aplica a forÃ§a na direÃ§Ã£o calculada
         rb.AddForce(launchDirection * forca, ForceMode.Impulse);
         Debug.Log("Valor launchAngle: "+launchAngle);
     }
