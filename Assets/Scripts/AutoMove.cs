@@ -18,7 +18,7 @@ public class AutoMove : MonoBehaviour
         {
             rb = GetComponent<Rigidbody2D>();
         }
-        valoresScript = FindObjectOfType<valores>();
+        valoresScript = FindFirstObjectByType<valores>();
         DifficultyMod = valoresScript.var2;
         moveSpeed = 15f - DifficultyMod;
         Debug.Log("Move Speed: " + moveSpeed);

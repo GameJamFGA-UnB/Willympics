@@ -13,7 +13,7 @@ public class timer : MonoBehaviour
     void Start()
     {
         // Encontra o script valores na cena
-        valoresScript = FindObjectOfType<valores>();
+        valoresScript = FindFirstObjectByType<valores>();
         a = valoresScript.var1;
         remaining_time += a;
     }

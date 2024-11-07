@@ -4,18 +4,21 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+
 public class buttonSmashing : MonoBehaviour
 {
     [SerializeField] private GameObject canvasPanel;
     [SerializeField] private TextMeshProUGUI relogio;
     [SerializeField] TextMeshProUGUI contagem;
+    private valores valoresScript;
 
+    private int i = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
-}
+        valoresScript = FindFirstObjectByType<valores>();
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -35,6 +38,10 @@ public class buttonSmashing : MonoBehaviour
                 }
             }
             if (relogio.text == "00:00") {
+                if (i == 0) {
+                    i = 1;
+                    valoresScript.var1 += 5;
+                }
                 SceneManager.LoadSceneAsync(2);
                 return; }
         }

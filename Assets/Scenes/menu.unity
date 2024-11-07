@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d799234a288801744b45bfe4f387045a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  var1: 100
+  var1: 0
   var2: 0
   var3: 0
 --- !u!4 &1232644275
