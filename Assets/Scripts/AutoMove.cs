@@ -20,7 +20,7 @@ public class AutoMove : MonoBehaviour
         }
         valoresScript = FindFirstObjectByType<valores>();
         DifficultyMod = valoresScript.var2;
-        moveSpeed = 15f - DifficultyMod;
+        moveSpeed = 10f - DifficultyMod;
         Debug.Log("Move Speed: " + moveSpeed);
 
     }
@@ -40,7 +40,7 @@ public class AutoMove : MonoBehaviour
                 moveSpeed = 2f;
                 rb.freezeRotation = true; // Tranca a rotacao do personagem
                 rb.linearVelocity = new Vector2(moveSpeed, jumpingPower);
-                SceneManager.LoadSceneAsync(0);
+                SceneManager.LoadSceneAsync(4);
                 return;
             }
             else
