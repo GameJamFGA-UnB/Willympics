@@ -15,7 +15,8 @@ public class timer : MonoBehaviour
         // Encontra o script valores na cena
         valoresScript = FindFirstObjectByType<valores>();
         a = valoresScript.var1;
-        remaining_time += a;
+        if (remaining_time > 60) { remaining_time = 60; }
+        else remaining_time += a;
     }
         void FixedUpdate()
     {

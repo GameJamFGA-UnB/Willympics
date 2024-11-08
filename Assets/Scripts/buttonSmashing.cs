@@ -20,7 +20,7 @@ public class buttonSmashing : MonoBehaviour
         valoresScript = FindFirstObjectByType<valores>();
     }
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (canvasPanel.activeSelf)
         {

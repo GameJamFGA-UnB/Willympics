@@ -9,4 +9,9 @@ public class leve1call : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
+
+    public void creditos()
+    {
+        SceneManager.LoadSceneAsync(5);
+    }
 }
