@@ -14,4 +14,4 @@ Aqui sugere-se que sejam colocados ao menos os nomes de cada desenvolvedor envol
 - [Henrique Batalha](https://github.com/HeBatalha)
 - [Lorenzo Santos](https://github.com/lorenzo7377)
 - [Lucas Machado](https://github.com/Lucas-Ricarte)
-- [Caio](https://github.com/Dexmachi)
+- [Caio Rocha](https://github.com/Dexmachi)
